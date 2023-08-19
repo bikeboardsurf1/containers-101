@@ -1,7 +1,3 @@
-
-In this scenario we will create a custom image that contains a web server
-<br>
-
 Confirm docker is running using
 
 ```plain
