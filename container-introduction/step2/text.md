@@ -27,7 +27,7 @@ cp ~/Dockerfile ~/containers101/
 cat ~/containers101/Dockerfile
 ```{{exec}}
 
-** You will notice the Dockerfile requires an additional file called 'default', copy this file to the same directory as the newly copied Dockerfile
+* You will notice the Dockerfile requires an additional file called 'default', copy this file to the same directory as the newly copied Dockerfile. This file is only related to the Webserver configuration, the contents are not too relevant for this tutorial.
 
 ```plain
 cp ~/default ~/containers101/
@@ -46,8 +46,6 @@ docker build -t my-nginx-image:1.0.0 .
 docker images
 ```{{exec}}
 
-* The output of the above should return two images:
-** One will relate to the FROM line in the Dockerfile 
-** The other will be your custom image.
+* The output of the above should return two images, one will relate to the FROM line in the Dockerfile and the other will be your custom image.
 
 
