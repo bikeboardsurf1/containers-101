@@ -22,5 +22,3 @@ server {
     }
 }
 EOL
-
-snap install trivy
