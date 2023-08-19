@@ -3,7 +3,7 @@ Now that we have verified that Docker is working and that we can run some basic 
 
 <br>
 
-Create a new directory in your home directory
+Create a new directory, this is where all container related files will reside.
 
 ```plain
 mkdir ~/containers101
