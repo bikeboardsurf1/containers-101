@@ -27,7 +27,7 @@ cp ~/Dockerfile ~/containers101/
 cat ~/containers101/Dockerfile
 ```{{exec}}
 
-* You will notice the Dockerfile requires an additional file called 'default', copy this file to the same directory as the newly copied Dockerfile. This file is only related to the Webserver configuration, the contents are not too relevant for this tutorial.
+* You will notice the Dockerfile requires an additional file called 'default', copy this file to the same directory as the newly copied Dockerfile. This file is only related to the web server configuration, the contents are not too relevant for this tutorial.
 
 ```plain
 cp ~/default ~/containers101/
