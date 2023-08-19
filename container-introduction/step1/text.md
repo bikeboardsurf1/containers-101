@@ -1,10 +1,27 @@
 
-In this scenario we will create a custom container image that containers a webserver (Nginx)
-Create a new directory called 'containers101' within your home directory. Within containers101 create a  new empty file called `Dockerfile`.
-
+In this scenario we will create a custom image that contains a web server
 <br>
 
-### Solution
+Confirm docker is running using
+
+```plain
+docker version
+```{{exec}}
+
+To check if there are any existing container images stored locally:
+
+```plain
+docker images
+```{{exec}}
+You will see there are no results.
+
+Check to see if there are any containers running:
+```plain
+docker ps
+```{{exec}}
+You will see there are no results
+
+
 Create a new directory in your home directory
 
 ```plain
