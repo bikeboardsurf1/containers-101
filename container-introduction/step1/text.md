@@ -1,0 +1,44 @@
+
+In this scenario we will create a custom container image that containers a webserver (Nginx)
+Create a new directory called 'containers101' within your home directory. Within containers101 create a  new empty file called `Dockerfile`.
+
+<br>
+
+### Solution
+Create a new directory in your home directory
+
+```plain
+mkdir ~/containers101
+```{{exec}}
+
+Navigate to the newly created directory
+
+```plain
+cd ~/containers101
+```{{exec}}
+
+Copy  the 'Dockerfile' located in the high level home directory to the containers101 sub directory
+
+```plain
+cp ~/Dockerfile ~/containers101/
+```{{exec}}
+
+Evaluate the contents of the Dockerfile 
+
+```plain
+cat ~/containers101/Dockerfile
+```{{exec}}
+
+You will notice the Dockerfile requires an additional file called 'default', copy this file to the same directory as the newly copied Dockerfile
+
+```plain
+cp ~/default ~/containers101/
+```{{exec}}
+
+
+Now that we have the necessary files, lets create a container image, tag the image 'my-nginx-image:1.0.0'. Do not forget the dot at the end of the command, this indicates to the container engine that the Dockerfile is in the current directory
+
+```plain
+docker build -t my-nginx-image:1.0.0 .
+```{{exec}}
+
