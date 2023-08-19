@@ -1,5 +1,5 @@
 
-Now that we have verified that Docker is working and that we can run some basic commands lets start building container images
+Now that we have verified that Docker is working and that we can run some basic commands lets start building an image.
 
 <br>
 
@@ -45,6 +45,6 @@ Lets see if the image exists
 docker images
 ```{{exec}}
 
-You should see the image that you created using the tag in the previous command
+The output of the above should return two images, one will relate to the FROM line in the Dockerfile and the other will be your custom image.
 
 
