@@ -8,9 +8,14 @@
     },
     "steps": [
       {
-        "title": "Create a Dockerfile",
+        "title": "Checking Docker",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Building an image",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       }
     ],
     "finish": {
