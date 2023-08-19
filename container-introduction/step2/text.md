@@ -3,19 +3,19 @@ Now that we have verified that Docker is working and that we can run some basic 
 
 <br>
 
-Create a new directory, this is where all container related files will reside.
+* Create a new directory, this is where all container related files will reside.
 
 ```plain
 mkdir ~/containers101
 ```{{exec}}
 
-Navigate to the newly created directory
+* Navigate to the newly created directory
 
 ```plain
 cd ~/containers101
 ```{{exec}}
 
-Copy  the 'Dockerfile' located in the high level home directory to the containers101 sub directory
+* Copy  the 'Dockerfile' located in the high level home directory to the containers101 sub directory
 
 ```plain
 cp ~/Dockerfile ~/containers101/
@@ -34,7 +34,7 @@ cp ~/default ~/containers101/
 ```{{exec}}
 
 
-Now that we have the necessary files, lets create a container image, tag the image 'my-nginx-image:1.0.0'. Do not forget the dot at the end of the command, this indicates to the container engine that the Dockerfile is in the current directory
+* Now that we have the necessary files, lets create a container image, tag the image 'my-nginx-image:1.0.0'. Do not forget the dot at the end of the command, this indicates to the container engine that the Dockerfile is in the current directory.
 
 ```plain
 docker build -t my-nginx-image:1.0.0 .
