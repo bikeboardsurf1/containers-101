@@ -21,30 +21,33 @@ cd ~/containers101
 cp ~/Dockerfile ~/containers101/
 ```{{exec}}
 
-Evaluate the contents of the Dockerfile 
+* Evaluate the contents of the Dockerfile 
 
 ```plain
 cat ~/containers101/Dockerfile
 ```{{exec}}
 
-You will notice the Dockerfile requires an additional file called 'default', copy this file to the same directory as the newly copied Dockerfile
+** You will notice the Dockerfile requires an additional file called 'default', copy this file to the same directory as the newly copied Dockerfile
 
 ```plain
 cp ~/default ~/containers101/
 ```{{exec}}
 
 
-* Now that we have the necessary files, lets create a container image, tag the image 'my-nginx-image:1.0.0'. Do not forget the dot at the end of the command, this indicates to the container engine that the Dockerfile is in the current directory.
+* Now that we have the necessary files, lets create a container image, tag the image 'my-nginx-image:1.0.0'. *Do not forget the dot at the end of the command* , this indicates to the container engine that the Dockerfile is in the current directory.
 
 ```plain
 docker build -t my-nginx-image:1.0.0 .
 ```{{exec}}
 
-Lets see if the image exists
+* Lets see if the image exists
+
 ```plain
 docker images
 ```{{exec}}
 
-The output of the above should return two images, one will relate to the FROM line in the Dockerfile and the other will be your custom image.
+* The output of the above should return two images:
+** One will relate to the FROM line in the Dockerfile 
+** The other will be your custom image.
 
 
