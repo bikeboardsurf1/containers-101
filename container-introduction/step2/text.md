@@ -33,7 +33,6 @@ cat ~/containers101/Dockerfile
 cp ~/default ~/containers101/
 ```{{exec}}
 
-
 * Now that we have the necessary files, lets create a container image, tag the image 'my-nginx-image:1.0.0'. *Do not forget the dot at the end of the command* , this indicates to the container engine that the Dockerfile is in the current directory.
 
 ```plain
