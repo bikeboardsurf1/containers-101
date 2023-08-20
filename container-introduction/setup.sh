@@ -1,7 +1,7 @@
 cat > /root/Dockerfile <<EOL
 FROM docker.io/rockylinux:9.2
 RUN dnf install nginx -y
-COPY default /etc/nginx/sites-available/default
+COPY index.html /var/www/html/index.html
 EXPOSE 80/tcp
 
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
