@@ -1,9 +1,16 @@
+STEP2
 
 Now that we have verified that Docker is working and that we can run some basic commands lets start building an image.
 
 <br>
 
-* List the contents of the current directory, all exercise files will based in 'containers101'
+* Navigate to the working directory for that contains the exercises
+```plain
+cd /root/containers101 
+```{{exec}}
+
+
+* List the contents, each folder corresponds with a step
 
 ```plain
 ls 

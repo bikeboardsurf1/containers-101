@@ -1,3 +1,7 @@
+STEP3
+
+<br>
+
 Given the image has now been created, let's start it up as a 'container'
 
 * Here we specify that we want to call the running container *my-nginx-container* and the image that the container is based on is *my-nginx-image*.

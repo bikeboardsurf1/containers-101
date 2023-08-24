@@ -1,3 +1,7 @@
+STEP1
+
+<br>
+
 Confirm docker is running using
 
 ```plain
