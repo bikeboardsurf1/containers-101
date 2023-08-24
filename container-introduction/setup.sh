@@ -1,3 +1,5 @@
+mkdir containers101
+
 cat > /root/Dockerfile <<EOL
 FROM docker.io/rockylinux:9.2
 RUN dnf install nginx -y
@@ -31,3 +33,43 @@ p.ex1 {
 </body>
 </html>
 EOL
+
+
+mkdir /root/containers101/step5/a
+mkdir /root/containers101/step5/b
+mkdir /root/containers101/step5/c
+mkdir /root/containers101/step5/d
+
+#Copy Index files, Docker files will be unique every time
+
+cp /root/index.html /root/containers101/step5/a/
+cp /root/index.html /root/containers101/step5/b/
+cp /root/index.html /root/containers101/step5/c/
+cp /root/index.html /root/containers101/step5/d/
+
+cat > /root/containers101/step5/a/myfile <<EOL
+FROM docker.io/rockylinux:9.2
+RUN dnf install nginx -y
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80/tcp
+
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+EOL
+
+cat > /root/step5/a/myfile <<EOL
+FROM docker.io/rockylinux:9.2
+RUN dnf install nginx -y
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80/tcp
+
+CMD ["/usr/sbin/nnginx", "-g", "daemon off;"]
+EOL
+
+#clean up
+rm /root/Dockerfile
+rm /root/index.html
+
+
+
+
+

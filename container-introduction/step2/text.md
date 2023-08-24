@@ -3,10 +3,10 @@ Now that we have verified that Docker is working and that we can run some basic 
 
 <br>
 
-* Create a new directory, this is where all container related files will reside.
+* List the contects of the current directory, all exercise files will based in 'containers101'
 
 ```plain
-mkdir ~/containers101
+ls ~/containers101
 ```{{exec}}
 
 * Navigate to the newly created directory
