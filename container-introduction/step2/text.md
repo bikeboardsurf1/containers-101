@@ -1,6 +1,6 @@
 STEP2
 
-Now that we have verified that Docker is working and that we can run some basic commands lets start building an image.
+>Now that we have verified that Docker is working and that we can run some basic commands lets start building an image.
 
 <br>
 
