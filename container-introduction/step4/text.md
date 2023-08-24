@@ -6,6 +6,8 @@ STEP4
 
 We use 'exec' to attach to an existing container and the 'it' flags indicate that we want to use an interactive terminal, when you have finished type 'exit' to end the interaction. 
 
+TODO ASK THE USER TO CREATE A FILE CALLED TEST THEN EXIT OUT OF THE CONTAINER THEN VERIFY ITS THERE
+
 ```plain
 docker exec -it my-nginx-container /bin/sh
 ```{{exec}}
