@@ -79,8 +79,6 @@ EOL
 rm /root/Dockerfile
 rm /root/index.html
 
-cd /root/containers101
-
 
 
 
