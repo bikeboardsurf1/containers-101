@@ -1,8 +1,9 @@
 STEP1
 
 <br>
+>Basic Docker commands
 
-Confirm docker is running using
+Confirm Docker is running using
 
 ```plain
 docker version
