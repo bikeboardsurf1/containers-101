@@ -1,4 +1,12 @@
 mkdir containers101
+mkdir /root/containers101/step2
+mkdir /root/containers101/step3
+mkdir /root/containers101/step4
+mkdir /root/containers101/step5/a
+mkdir /root/containers101/step5/b
+mkdir /root/containers101/step5/c
+mkdir /root/containers101/step5/d
+
 
 cat > /root/Dockerfile <<EOL
 FROM docker.io/rockylinux:9.2
@@ -34,14 +42,16 @@ p.ex1 {
 </html>
 EOL
 
+cp /root/Dockerfile /root/containers101/step2/
+cp /root/Dockerfile /root/containers101/step3/
+cp /root/Dockerfile /root/containers101/step4/
 
-mkdir /root/containers101/step5/a
-mkdir /root/containers101/step5/b
-mkdir /root/containers101/step5/c
-mkdir /root/containers101/step5/d
 
-#Copy Index files, Docker files will be unique every time
+#Copy Index files, some Docker files in step 5 will be unique to the exercise
 
+cp /root/index.html /root/containers101/step2/
+cp /root/index.html /root/containers101/step3/
+cp /root/index.html /root/containers101/step4/
 cp /root/index.html /root/containers101/step5/a/
 cp /root/index.html /root/containers101/step5/b/
 cp /root/index.html /root/containers101/step5/c/

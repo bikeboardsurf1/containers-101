@@ -3,37 +3,28 @@ Now that we have verified that Docker is working and that we can run some basic 
 
 <br>
 
-* List the contects of the current directory, all exercise files will based in 'containers101'
+* List the contents of the current directory, all exercise files will based in 'containers101'
 
 ```plain
-ls ~/containers101
+ls 
 ```{{exec}}
 
-* Navigate to the newly created directory
+* Navigate to step 2
 
 ```plain
-cd ~/containers101
+cd step2
 ```{{exec}}
 
-* Copy  the 'Dockerfile' located in the high level home directory to the containers101 sub directory
-
-```plain
-cp ~/Dockerfile ~/containers101/
-```{{exec}}
 
 * Evaluate the contents of the Dockerfile 
 
 ```plain
-cat ~/containers101/Dockerfile
+cat ~/containers101/step2/Dockerfile
 ```{{exec}}
 
 * You will notice the Dockerfile requires an additional file called 'index.html', copy this file to the same directory as the newly copied Dockerfile. This file is only related to the web server, the contents are not too relevant for this tutorial.
 
-```plain
-cp ~/index.html ~/containers101/
-```{{exec}}
-
-* Now that we have the necessary files, lets create a container image, tag the image 'my-nginx-image:1.0.0'. *Do not forget the dot at the end of the command* , this indicates to the container engine that the Dockerfile is in the current directory.
+Lets create a container image, tag the image 'my-nginx-image:1.0.0'. *Do not forget the dot at the end of the command* , this indicates to the container engine that the Dockerfile is in the current directory.
 
 ```plain
 docker build -t my-nginx-image:1.0.0 .
