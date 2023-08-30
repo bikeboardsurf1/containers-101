@@ -29,6 +29,7 @@ cd step2
 cat ~/containers101/step2/Dockerfile
 ```{{exec}}
 
+* As an overview:
 ** The starting point for this Dockerfile is rockylinux version 9.2 , this will mean when we run our container it will perform as if it is Rocky Linux
 ** Next are installing a popular web server called Nginx
 ** The following line copies a file called index.html from the host in the directory you are in to the image and will be located within the directory specified, when the container is running this file will be present
