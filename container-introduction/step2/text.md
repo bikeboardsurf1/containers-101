@@ -29,7 +29,12 @@ cd step2
 cat ~/containers101/step2/Dockerfile
 ```{{exec}}
 
-* You will notice the Dockerfile requires an additional file called 'index.html', copy this file to the same directory as the newly copied Dockerfile. This file is only related to the web server, the contents are not too relevant for this tutorial.
+** The starting point for this Dockerfile is rockylinux version 9.2 , this will mean when we run our container it will perform as if it is Rocky Linux
+** Next are installing a popular web server called Nginx
+** The following line copies a file called index.html from the host in the directory you are in to the image and will be located within the directory specified, when the container is running this file will be present
+** The EXPOSE informs that this container should be run using port 80
+** The CMD statement is used to pass arguments to the entry point of the container, in many cases, including in this scenario for Rocky Linux the entry point is /bin/sh
+
 
 * Lets create a container image, tag the image 'my-nginx-image:1.0.0'. *Do not forget the dot at the end of the command* , this indicates to the container engine that the Dockerfile is in the current directory.
 
