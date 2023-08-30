@@ -5,7 +5,7 @@ STEP3
 >Given the image has now been created, let's start it up as a 'container'
 
 * Here we want to give the running container a name *my-nginx-container* and inform that image that the container is based on is *my-nginx-image* version *1.0.0*
-* If the version number is NOT provided the container engine will assume 'latest' and if an image does not contain a tag name of 'latest' an error is likely to be returned
+* If the version number is NOT provided the container engine will assume 'latest' and if an image does not contain a tag name of 'latest'locally, the engine will attempt to find it from an online repository e.g docker hub and if it still cannot be found  an error will be returned
 * To indicate that the container needs to be run in the background (or *detached* mode) we use the -d flag
 
 ```plain
