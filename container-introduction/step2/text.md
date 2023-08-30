@@ -53,5 +53,11 @@ docker images
 ```{{exec}}
 
 * The output of the above should return two images, one will relate to the FROM line in the Dockerfile and the other will be your custom image.
+* Note if you were to run docker build again the build will be very quick as the container image layers will have been cached locally. Run the following:
+
+```plain
+docker build -t my-nginx-image:1.0.0 .
+```{{exec}}
+
 
 
