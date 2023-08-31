@@ -2,7 +2,7 @@ STEP4
 
 <br>
 
->Having created a container we will now interact with it using a terminal. Remember any changes that you make in the terminal are ephemeral - if the container stops all changes will be lost.
+>Having created a container we will now interact with it using a terminal. 
 
 We use 'exec' to attach to an existing container and the 'it' flags indicate that we want to use an interactive terminal. Run the following command: 
 
@@ -10,7 +10,7 @@ We use 'exec' to attach to an existing container and the 'it' flags indicate tha
 docker exec -it my-nginx-container /bin/sh
 ```{{exec}}
 
-* To demonstrate that containers are ephemeral in nature lets create a file inside the running container, having run the command above run the following to create a sample file:
+* Create a file inside the running container, having run the command above run the following to create a sample file:
 
 ```plain
 touch a-created-sample-file
@@ -32,28 +32,5 @@ exit
 ```plain
 docker ps
 ```{{exec}}
-
-* Now lets restart the container
-
-```plain
-docker restart my-nginx-container
-```{{exec}}
-
-
-* Check if the file is there by creating an interactive terminal 
-
-```plain
-docker exec -it my-nginx-container /bin/sh
-```{{exec}}
-
-* List the contents of the current directory
-
-```plain
-ls
-```{{exec}}
-
-* Note the file is no longer there
-
->If the file is static and needed to be available in the container, it could have been added when the image was first built via the Dockerfile. Alternatively we could mount a volume, linking the container and the host.
 
 
