@@ -37,7 +37,7 @@ cat ~/containers101/step2/Dockerfile
 * The CMD statement is used to pass arguments to the entry point of the container, in many cases, including in this scenario for Rocky Linux the entry point is /bin/sh
 
 
-* Lets create a container image, tag the image 'my-nginx-image:1.0.0'. *Do not forget the dot at the end of the command* , this indicates to the container engine that the Dockerfile is in the current directory.
+* Ensure that you are inside of the /root/containers101/step2 directory using then create a container image, tag the image 'my-nginx-image:1.0.0'. *Do not forget the dot at the end of the command* , this indicates to the container engine that the Dockerfile is in the current directory.
 
 ```plain
 docker build -t my-nginx-image:1.0.0 .
