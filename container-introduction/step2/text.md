@@ -4,26 +4,26 @@ STEP2
 
 <br>
 
-* Navigate to the working directory for that contains the exercises
+* Navigate to the working directory that contains the exercises:
 ```plain
 cd /root/containers101 
 ```{{exec}}
 
 
-* List the contents, each folder corresponds with a step
+* List the contents, each folder corresponds with a step:
 
 ```plain
 ls 
 ```{{exec}}
 
-* Navigate to step 2
+* Navigate to step 2:
 
 ```plain
 cd step2
 ```{{exec}}
 
 
-* Evaluate the contents of the Dockerfile 
+* Evaluate the contents of the Dockerfile:
 
 ```plain
 cat ~/containers101/step2/Dockerfile
