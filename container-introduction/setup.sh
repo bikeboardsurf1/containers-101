@@ -50,7 +50,7 @@ cp /root/index.html /root/containers101/step6/
 cp /root/index.html /root/containers101/step7/
 cp /root/index.html /root/containers101/step8/
 
-cat > /root/containers101/step5/a/myfile <<EOL
+cat > /root/containers101/step5/myfile <<EOL
 FROM docker.io/rockylinux:9.2
 RUN dnf install nginx -y
 COPY index.html /usr/share/nginx/html/index.html
@@ -59,18 +59,7 @@ EXPOSE 80/tcp
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 EOL
 
-#Step 5a
-cat > /root/step5/a/myfile <<EOL
-FROM docker.io/rockylinux:9.2
-RUN dnf install nginx -y
-COPY index.html /usr/share/nginx/html/index.html
-EXPOSE 80/tcp
-
-CMD ["/usr/sbin/nnginx", "-g", "daemon off;"]
-EOL
-
-#Step 5a
-cat > /root/step5/a/nginx.conf <<EOL
+cat > /root/step5/nginx.conf <<EOL
 server {
     listen 8091 default_server;
     listen [::]:8091 default_server; 
@@ -86,8 +75,3 @@ EOL
 #clean up
 rm /root/Dockerfile
 rm /root/index.html
-
-
-
-
-
