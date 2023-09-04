@@ -2,10 +2,10 @@ mkdir containers101
 mkdir /root/containers101/step2
 mkdir /root/containers101/step3
 mkdir /root/containers101/step4
-mkdir /root/containers101/step5/a
-mkdir /root/containers101/step5/b
-mkdir /root/containers101/step5/c
-mkdir /root/containers101/step5/d
+mkdir /root/containers101/step5
+mkdir /root/containers101/step6
+mkdir /root/containers101/step7
+mkdir /root/containers101/step8
 
 
 cat > /root/Dockerfile <<EOL
@@ -52,10 +52,10 @@ cp /root/Dockerfile /root/containers101/step4/
 cp /root/index.html /root/containers101/step2/
 cp /root/index.html /root/containers101/step3/
 cp /root/index.html /root/containers101/step4/
-cp /root/index.html /root/containers101/step5/a/
-cp /root/index.html /root/containers101/step5/b/
-cp /root/index.html /root/containers101/step5/c/
-cp /root/index.html /root/containers101/step5/d/
+cp /root/index.html /root/containers101/step5/
+cp /root/index.html /root/containers101/step6/
+cp /root/index.html /root/containers101/step7/
+cp /root/index.html /root/containers101/step8/
 
 cat > /root/containers101/step5/a/myfile <<EOL
 FROM docker.io/rockylinux:9.2
@@ -66,6 +66,7 @@ EXPOSE 80/tcp
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 EOL
 
+#Step 5a
 cat > /root/step5/a/myfile <<EOL
 FROM docker.io/rockylinux:9.2
 RUN dnf install nginx -y
@@ -73,6 +74,20 @@ COPY index.html /usr/share/nginx/html/index.html
 EXPOSE 80/tcp
 
 CMD ["/usr/sbin/nnginx", "-g", "daemon off;"]
+EOL
+
+#Step 5a
+cat > /root/step5/a/nginx.conf <<EOL
+server {
+    listen 8091 default_server;
+    listen [::]:8091 default_server; 
+    root /var/www/html;  
+    index index.html; 
+    server_name _;  
+    location / {
+       try_files $uri $uri/ =404;
+     }
+}
 EOL
 
 #clean up
