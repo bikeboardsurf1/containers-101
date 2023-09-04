@@ -10,14 +10,19 @@ cd /root/containers101/step5
 ```{{exec}}
 
 ### Building the image ###
-<strong>Alternative to Dockerfile file name</strong>
 List the contents of the directory
 
 ```plain
 ls
 ```{{exec}}
 
-you will note there is a file called 'myfile'
+Evaluate the contents of myfile:
+```plain
+cat myfile
+```{{exec}}
+
+
+you will note there is a file called 'myfile', note this is in the form of a Dockerfile
 
 Create an image from 'myfile' with the name my-web-server-image and version 0.0.1
 
@@ -32,10 +37,7 @@ Once the image above has been created, start up a container, ensure its called <
 curl localhost:81
 ```{{exec}}
 
-
-
-<strong>Troubleshooting</strong>
-Resolve the problem above
+Resolve the problem above to ensure that the container is running as expected.
 
 
 
