@@ -1,12 +1,5 @@
-mkdir containers101
-mkdir /root/containers101/step2
-mkdir /root/containers101/step3
-mkdir /root/containers101/step4
-mkdir /root/containers101/step5
-mkdir /root/containers101/step6
-mkdir /root/containers101/step7
-mkdir /root/containers101/step8
-
+#create necessary exercise directories
+mkdir -p /root/containers101/step{1..8}
 
 cat > /root/Dockerfile <<EOL
 FROM docker.io/rockylinux:9.2
