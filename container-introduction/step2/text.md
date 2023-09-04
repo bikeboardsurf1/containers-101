@@ -10,7 +10,7 @@ cd /root/containers101
 ```{{exec}}
 
 
-* List the contents, each folder corresponds with a step:
+* List the contents, each folder corresponds with a step (in this case step2):
 
 ```plain
 ls 
