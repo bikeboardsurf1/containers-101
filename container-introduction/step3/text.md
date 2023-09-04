@@ -26,6 +26,34 @@ docker ps
 curl 127.0.0.1:8085
 ```{{exec}}
 
+## Stopping a container
+
+* To stop a running container use docker stop command. Docker kill can be used but it is less graceful.
+
+```plain
+docker stop my-nginx-container
+```{{exec}}
+
+* Note the status of ALL containers including a stopped container can be seen by adding the -a flag to the docker ps command as shown:
+
+```plain
+docker ps -a
+```{{exec}}
+
+* You will not be able to run a new container with the same name even if the container with the shared name is stopped. Note the error when the following is run:
+
+```plain
+docker run -d -p 8085:80 --name my-nginx-container my-nginx-image:1.0.0
+```{{exec}}
+
+* The container reference with that name has to be removed first before a new container with the same name can be started up. Run the following to delete the container reference and to start up a new container:
+
+```plain
+docker rm my-nginx-container 
+docker run -d -p 8085:80 --name my-nginx-container my-nginx-image:1.0.0
+```{{exec}}
+
+
 
 
 

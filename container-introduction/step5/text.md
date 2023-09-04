@@ -19,7 +19,7 @@ you will note there is a file called 'myfile'
 
 Create an image from 'myfile' with the name my-web-server-image and version 0.0.1
 
-<strong>Start the container </strong>
+## Start the container ##
 Once the image above has been created, start up a container, ensure its called <strong>my-web-server</strong> the mapping this should run on <strong>port 81 of the host</strong> and mapped to <strong>port 80 on the container</strong> itself
 
 >Note the container is not as expected, if you attempt to access the URL of that container via the specified port , the content is not returned as expected
