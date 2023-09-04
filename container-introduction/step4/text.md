@@ -8,6 +8,8 @@ We use 'exec' to attach to an existing container and the 'it' flags indicate tha
 
 ```plain
 docker exec -it my-nginx-container /bin/sh
+
+
 ```{{exec}}
 
 * You are now operating within the container's terminal
@@ -16,17 +18,23 @@ docker exec -it my-nginx-container /bin/sh
 
 ```plain
 touch a-created-sample-file
+
+
 ```{{exec}}
 
 * Note the file is present in the local directory
 ```plain
 ls
+
+
 ```{{exec}}
 
 * Now exit the container
 
 ```plain
 exit
+
+
 ```{{exec}}
 
 * Note that the container continues to run despite exiting the interactive terminal, this is because you attached to a container that was already running. 
