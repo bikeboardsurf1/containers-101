@@ -10,7 +10,7 @@ We use 'exec' to attach to an existing container and the 'it' flags indicate tha
 docker exec -it my-nginx-container /bin/sh
 ```{{exec}}
 
-* Create a file inside the running container, having run the command above run the following to create a sample file:
+* After running the above command create a file inside the running container:
 
 ```plain
 touch a-created-sample-file
