@@ -9,7 +9,7 @@ Locate the files for this exercise in the appropriate directory
 cd /root/containers101/step5
 ```{{exec}}
 
-### Building the image ##
+### Building the image ###
 <strong>Alternative to Dockerfile file name</strong>
 List the contents of the directory
 
