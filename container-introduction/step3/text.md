@@ -18,9 +18,9 @@ docker run -d -p 8085:80 --name my-nginx-container my-nginx-image:1.0.0
 docker ps
 ```{{exec}}
 
->Note that the container has an auto-generated ID, specifies the image that its based on, the commans that are running the port mapping and the Name of the container
+>After running the above command you can see the image that the container based, the port mapping and the name of the container
 
-* We can see if this container is running the webserver as expected using the curl command, this should which should return some html:
+* To test if the container is running the webserver as expected we can use the curl command, this should return some html:
 
 ```plain
 curl 127.0.0.1:8085
