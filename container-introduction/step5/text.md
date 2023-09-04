@@ -26,7 +26,7 @@ Create an image from 'myfile' with the name my-web-server-image and version 0.0.
 ### Start the container ###
 Once the image above has been created, start up a container, ensure its called <strong>my-web-server</strong> the mapping this should run on <strong>port 81 of the host</strong> and mapped to <strong>port 80 on the container</strong> itself
 
->Note the container is not as expected, if you attempt to access the URL of that container via the specified port , the content is not returned as expected
+>Note the container is not operating as expected, if you attempt to access the URL of that container via the specified port , the content is not returned as expected
 
 ```plain
 curl localhost:81
