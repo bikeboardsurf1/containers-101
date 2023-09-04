@@ -12,7 +12,7 @@ cd /root/containers101/step5
 List the contents of the directory
 
 ```plain
-ls -R
+ls
 ```{{exec}}
 
 you will note there is a file called 'myfile'
