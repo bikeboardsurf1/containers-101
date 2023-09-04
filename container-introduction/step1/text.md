@@ -4,7 +4,7 @@ STEP1
 
 <br>
 
-Confirm Docker is running using
+Confirm Docker is running using:
 
 ```plain
 docker version
