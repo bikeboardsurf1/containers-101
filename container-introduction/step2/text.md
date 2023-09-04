@@ -25,7 +25,7 @@ cd step2
 * View the contents of this step:
 
 ```plain
-cd step2
+ls
 ```{{exec}}
 
 
