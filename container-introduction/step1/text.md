@@ -1,7 +1,8 @@
 STEP1
 
+> Basic Docker commands
+
 <br>
->Basic Docker commands
 
 Confirm Docker is running using
 
