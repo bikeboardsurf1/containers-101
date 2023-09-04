@@ -22,6 +22,12 @@ ls
 cd step2
 ```{{exec}}
 
+* View the contents of this step:
+
+```plain
+cd step2
+```{{exec}}
+
 
 * Evaluate the contents of the Dockerfile:
 
