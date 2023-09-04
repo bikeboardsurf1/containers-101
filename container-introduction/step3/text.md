@@ -13,7 +13,12 @@ STEP3
 docker run -d -p 8085:80 --name my-nginx-container my-nginx-image:1.0.0
 ```{{exec}}
 
-* We can see if this container is running by running a curl command which should return some html:
+* To see if the container is running use:
+```plain
+docker ps
+```{{exec}}
+
+* We can see if this container is running the webserver as expected using the curl command, this should which should return some html:
 
 ```plain
 curl 127.0.0.1:8085
