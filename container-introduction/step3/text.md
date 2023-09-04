@@ -18,7 +18,7 @@ docker run -d -p 8085:80 --name my-nginx-container my-nginx-image:1.0.0
 docker ps
 ```{{exec}}
 
->After running the above command you can see the image that the container based on, the status, the port mapping and the name of the container
+>After running the above command you can see the image that the container is based on, the status, the port mapping and the name of the container
 
 * To test if the container is running the webserver as expected we can use the curl command, this should return some html:
 
