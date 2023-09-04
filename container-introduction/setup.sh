@@ -59,7 +59,7 @@ EXPOSE 80/tcp
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 EOL
 
-cat > /root/step5/nginx.conf <<EOL
+cat > /root/containers101/step5/nginx.conf <<EOL
 server {
     listen 8091 default_server;
     listen [::]:8091 default_server; 
