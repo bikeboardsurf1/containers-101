@@ -54,6 +54,7 @@ cat > /root/containers101/step5/myfile <<EOL
 FROM docker.io/rockylinux:9.2
 RUN dnf install nginx -y
 COPY index.html /usr/share/nginx/html/index.html
+COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80/tcp
 
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
