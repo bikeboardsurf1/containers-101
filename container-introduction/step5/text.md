@@ -38,7 +38,7 @@ Once the image above has been created, start up a container but with the followi
 * the mapping this should run on <strong>port 81 of the host</strong> and mapped to <strong>port 80 on the container</strong> itself
 * it must run in detached mode
 
->Note the container is not operating as expected, if you attempt to access the URL of that container via the specified port , the content (html) is not returned as expected
+>Note the container is not operating as expected, if you attempt to access the URL of that container via the specified port , the content (html) is not returned, instead 'curl: (52) Empty reply from server' is provided.
 
 ```plain
 curl localhost:81
