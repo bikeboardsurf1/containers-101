@@ -24,7 +24,10 @@ cat myfile
 
 you will note there is a file called 'myfile', note this is in the form of a Dockerfile
 
-Create an image from 'myfile' with the name my-web-server-image and version 0.0.1
+Create an image from 'myfile' with the following instructions:
+
+* Image name: my-web-server-image
+* Version 0.0.1
 
 >HINT: The docker engine will need to be informed of the location of the file as it is not called the default name 'Dockerfile'
 
